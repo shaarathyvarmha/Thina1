@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Smart Health Care Prediction System</title>
+</head>
+<body>
+    <h1>Health Prediction System</h1>
+    <form id="predictionForm">
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="symptoms">Symptoms (select multiple):</label>
+        <select id="symptoms" multiple required>
+            <option value="fever">Fever</option>
+            <option value="cough">Cough</option>
+            <option value="chest pain">Chest Pain</option>
+            <option value="shortness of breath">Shortness of Breath</option>
+            <option value="headache">Headache</option>
+            <option value="nausea">Nausea</option>
+            <option value="sore throat">Sore Throat</option>
+            <option value="fatigue">Fatigue</option>
+            <option value="weight loss">Weight Loss</option>
+            <option value="dizziness">Dizziness</option>
+            <option value="rash">Rash</option>
+            <option value="muscle pain">Muscle Pain</option>
+            <option value="joint pain">Joint Pain</option>
+            <option value="abdominal pain">Abdominal Pain</option>
+            <option value="diarrhea">Diarrhea</option>
+            <option value="constipation">Constipation</option>
+            <option value="sweating">Sweating</option>
+            <option value="chills">Chills</option>
+            <option value="vomiting">Vomiting</option>
+            <option value="runny nose">Runny Nose</option>
+            <option value="itchy eyes">Itchy Eyes</option>
+            <option value="dry mouth">Dry Mouth</option>
+            <option value="insomnia">Insomnia</option>
+            <option value="anxiety">Anxiety</option>
+            <option value="depression">Depression</option>
+            <!-- Add more symptoms as needed -->
+        </select>
+        
+        <button type="submit">Predict</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
